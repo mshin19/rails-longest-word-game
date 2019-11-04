@@ -1,0 +1,14 @@
+<h1>Result</h1>
+<br>
+<% if @included %>
+  <% if @englishword %>
+    <%= "Well done." %>
+  <% else %>
+    <%= "Not an english word." %>
+  <% end %>
+<% else %>
+  <%= "Not in the grid." %>
+<% end %>
+<br>
+<%= link_to 'Play again', new_path %>
+
